@@ -340,6 +340,30 @@ body {
   color: var(--rv-text-bright) !important;
 }
 
+/* Per-heading gradient underline (from Obsidianite) */
+.HyperMD-header.HyperMD-header-2,
+.HyperMD-header.HyperMD-header-3,
+.HyperMD-header.HyperMD-header-4,
+.HyperMD-header.HyperMD-header-5,
+.HyperMD-header.HyperMD-header-6 {
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, var(--rv-accent-dim), transparent 60%);
+  padding-bottom: 6px;
+}
+
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+  position: relative;
+  padding-bottom: 8px;
+  border-bottom: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, var(--rv-accent-dim), transparent 60%);
+}
+
 .cm-url, .cm-link, .external-link {
   color: var(--rv-accent-dim) !important;
 }
