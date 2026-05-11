@@ -173,7 +173,16 @@ body {
 }
 
 /* ── Editor pane — each note tab is a floating card ── */
+/* Direct child for the main unsplit case */
 .workspace-split.mod-root > .workspace-tabs {
+  background: var(--rv-panel-bg) !important;
+  border-radius: var(--rv-radius) !important;
+  border: var(--rv-panel-border) !important;
+  overflow: hidden;
+}
+
+/* Nested splits (vertical/horizontal split views) */
+.workspace-split.mod-root .workspace-split .workspace-tabs {
   background: var(--rv-panel-bg) !important;
   border-radius: var(--rv-radius) !important;
   border: var(--rv-panel-border) !important;
@@ -493,6 +502,7 @@ body {
   background: rgba(14, 210, 247, 0.12) !important;
 }
 
+
 /* ═══════════════════════════════════════════
    BUTTONS & INPUTS
    ═══════════════════════════════════════════ */
@@ -534,7 +544,7 @@ input[type="text"]:focus, input[type="search"]:focus, textarea:focus {
    GRAPH VIEW
    ═══════════════════════════════════════════ */
 
-.graph-view.color-fill { color: #0d0b12 !important; }
+.graph-view.color-fill { color: rgba(224, 177, 82, 0.85) !important; }
 .graph-view.color-line { color: var(--rv-accent-subtle) !important; }
 .graph-view.color-text { color: var(--rv-text) !important; }
 .graph-view.color-fill-highlight { color: var(--rv-accent) !important; }
@@ -710,12 +720,12 @@ strong kbd {
   background-size: 3px 50px;
 }
 
-/* ── Graph view — better colors ── */
-.graph-view.color-fill { color: rgba(244, 86, 157, 0.8) !important; }
-.graph-view.color-fill-tag { color: rgba(250, 204, 21, 0.8) !important; }
+/* ── Graph view — gold nodes ── */
+.graph-view.color-fill { color: rgba(224, 177, 82, 0.85) !important; }
+.graph-view.color-fill-tag { color: rgba(244, 86, 157, 0.8) !important; }
 .graph-view.color-fill-attachment { color: rgba(122, 162, 247, 0.8) !important; }
-.graph-view.color-fill-unresolved { color: rgba(255, 255, 255, 0.2) !important; }
-.graph-view.color-fill-highlight { color: rgba(14, 210, 247, 1) !important; }
-.graph-view.color-line { color: rgba(14, 210, 247, 0.2) !important; }
+.graph-view.color-fill-unresolved { color: rgba(255, 255, 255, 0.15) !important; }
+.graph-view.color-fill-highlight { color: rgba(224, 177, 82, 1) !important; }
+.graph-view.color-line { color: rgba(224, 177, 82, 0.12) !important; }
 .graph-view.color-text { color: var(--rv-text) !important; }
-.graph-view.color-circle { color: rgba(14, 210, 247, 0.4) !important; }
+.graph-view.color-circle { color: rgba(224, 177, 82, 0.35) !important; }
