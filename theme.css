@@ -7,11 +7,11 @@
   --rv-gap: 6px;
   --rv-radius: 10px;
   --rv-panel-bg: rgba(16, 14, 23, 0.75);
-  --rv-panel-border: 1px solid rgba(14, 210, 247, 0.08);
-  --rv-accent: rgba(14, 210, 247, 1);
-  --rv-accent-dim: rgba(14, 210, 247, 0.5);
-  --rv-accent-subtle: rgba(14, 210, 247, 0.1);
-  --rv-accent-faint: rgba(14, 210, 247, 0.05);
+  --rv-panel-border: 1px solid color-mix(in srgb, #bf895d 8%, transparent);
+  --rv-accent: #bf895d;
+  --rv-accent-dim: #5e3202;
+  --rv-accent-subtle: color-mix(in srgb, #bf895d 10%, transparent);
+  --rv-accent-faint: color-mix(in srgb, #bf895d 5%, transparent);
   --rv-text: #bebebe;
   --rv-text-bright: #e0e0e0;
   --rv-text-dim: #666;
